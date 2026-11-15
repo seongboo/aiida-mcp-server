@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aiida-mcp-server"
+version = "0.1.0"
+description = "Read-only MCP server exposing an AiiDA profile to Claude"
+requires-python = ">=3.10"
+dependencies = ["aiida-core>=2.5", "mcp>=2,<3"]
+
+[project.scripts]
+aiida-mcp-server = "server:main"
+
+[tool.setuptools]
+py-modules = ["server"]
