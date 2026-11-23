@@ -13,7 +13,7 @@ No tool writes to the database.
 
 ## Install (on the machine that holds your AiiDA profile)
 ```bash
-git clone <this repo> && cd aiida-mcp-server
+git clone https://github.com/seongboo/aiida-mcp-server.git && cd aiida-mcp-server
 python -m venv .venv && source .venv/bin/activate
 pip install -e .
 ```
